@@ -48,11 +48,11 @@
 }
 
 .input-field {
-  @apply w-full bg-transparent border-2 border-gray-600 px-4 py-3 rounded-none text-white focus:outline-none focus:border-redcanary focus:ring-1 focus:ring-redcanary transition-all;
+  @apply w-full bg-transparent border-2 border-gray-600 px-4 py-3 rounded-none text-white text-lg focus:outline-none focus:border-redcanary focus:ring-1 focus:ring-redcanary transition-all;
 }
 
 .select-field {
-  @apply w-full bg-background border-2 border-gray-600 px-4 py-3 rounded-none text-white focus:outline-none focus:border-redcanary focus:ring-1 focus:ring-redcanary transition-all appearance-none;
+  @apply w-full bg-background border-2 border-gray-600 px-4 py-3 rounded-none text-white text-lg focus:outline-none focus:border-redcanary focus:ring-1 focus:ring-redcanary transition-all appearance-none;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 0.75rem center;
   background-repeat: no-repeat;
@@ -61,5 +61,5 @@
 }
 
 .form-button {
-  @apply bg-redcanary text-white py-3 px-6 border-none rounded-none font-medium hover:bg-redcanary-700 transition-colors duration-300 ease-in-out;
+  @apply bg-redcanary text-white py-3 px-6 border-none rounded-none font-medium text-lg hover:bg-redcanary-700 transition-colors duration-300 ease-in-out;
 }

@@ -22,20 +22,20 @@ const ProgressIndicator: React.FC<ProgressIndicatorProps> = ({
         {showBackButton ? (
           <button 
             onClick={onBack}
-            className="flex items-center text-white opacity-80 hover:opacity-100 transition-opacity"
+            className="flex items-center text-white opacity-80 hover:opacity-100 transition-opacity text-base"
           >
-            <ChevronLeft className="h-4 w-4 mr-1" />
+            <ChevronLeft className="h-5 w-5 mr-1" />
             <span>Back</span>
           </button>
         ) : (
           <div></div>
         )}
-        <div className="text-white text-sm">
+        <div className="text-white text-base">
           Step {currentStep} of {totalSteps}
         </div>
       </div>
       
-      <div className="w-full h-1 bg-gray-800 rounded-full overflow-hidden">
+      <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
         <div 
           className="h-full bg-redcanary transition-all duration-300 ease-in-out"
           style={{ width: `${(currentStep / totalSteps) * 100}%` }}

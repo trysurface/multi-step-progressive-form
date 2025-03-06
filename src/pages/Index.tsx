@@ -5,7 +5,7 @@ import RedCanaryLogo from '@/components/RedCanaryLogo';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row bg-black text-white max-w-5xl mx-auto">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-black text-white max-w-6xl mx-auto">
       <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center">
         <div className="mb-8">
           <RedCanaryLogo />

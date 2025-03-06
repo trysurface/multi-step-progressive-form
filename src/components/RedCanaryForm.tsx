@@ -53,7 +53,6 @@ const RedCanaryForm: React.FC = () => {
 
     if (step < totalSteps) {
       setStep(prev => prev + 1);
-      // Scroll to top of form when advancing steps
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -61,7 +60,6 @@ const RedCanaryForm: React.FC = () => {
   const prevStep = () => {
     if (step > 1) {
       setStep(prev => prev - 1);
-      // Scroll to top of form when going back
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -78,7 +76,6 @@ const RedCanaryForm: React.FC = () => {
       return;
     }
 
-    // Here you would typically send the data to an API
     console.log('Form submitted:', formData);
     
     toast({
@@ -86,10 +83,9 @@ const RedCanaryForm: React.FC = () => {
       description: "Thank you for your interest in Red Canary.",
     });
     
-    // Redirect to the thank you page after a short delay
     setTimeout(() => {
       window.location.href = 'https://redcanary.com/thank-you-demo/';
-    }, 1000); // 1 second delay to allow the toast to be seen
+    }, 1000);
   };
 
   return (
@@ -104,7 +100,7 @@ const RedCanaryForm: React.FC = () => {
       <form onSubmit={handleSubmit} className="animate-fade-in">
         {step === 1 && (
           <div className="mb-6">
-            <label htmlFor="email" className="block text-white mb-2">
+            <label htmlFor="email" className="block text-white mb-2 text-lg">
               <span className="text-redcanary">*</span> Email Address:
             </label>
             <input
@@ -123,7 +119,7 @@ const RedCanaryForm: React.FC = () => {
         {step === 2 && (
           <>
             <div className="mb-6">
-              <label htmlFor="firstName" className="block text-white mb-2">
+              <label htmlFor="firstName" className="block text-white mb-2 text-lg">
                 <span className="text-redcanary">*</span> First Name:
               </label>
               <input
@@ -138,7 +134,7 @@ const RedCanaryForm: React.FC = () => {
               />
             </div>
             <div className="mb-6">
-              <label htmlFor="lastName" className="block text-white mb-2">
+              <label htmlFor="lastName" className="block text-white mb-2 text-lg">
                 <span className="text-redcanary">*</span> Last Name:
               </label>
               <input
@@ -153,7 +149,7 @@ const RedCanaryForm: React.FC = () => {
               />
             </div>
             <div className="mb-6">
-              <label htmlFor="company" className="block text-white mb-2">
+              <label htmlFor="company" className="block text-white mb-2 text-lg">
                 <span className="text-redcanary">*</span> Company Name:
               </label>
               <input
@@ -173,7 +169,7 @@ const RedCanaryForm: React.FC = () => {
         {step === 3 && (
           <>
             <div className="mb-6">
-              <label htmlFor="phone" className="block text-white mb-2">
+              <label htmlFor="phone" className="block text-white mb-2 text-lg">
                 <span className="text-redcanary">*</span> Phone Number:
               </label>
               <input
@@ -188,7 +184,7 @@ const RedCanaryForm: React.FC = () => {
               />
             </div>
             <div className="mb-6">
-              <label htmlFor="state" className="block text-white mb-2">
+              <label htmlFor="state" className="block text-white mb-2 text-lg">
                 <span className="text-redcanary">*</span> State:
               </label>
               <select
@@ -253,7 +249,7 @@ const RedCanaryForm: React.FC = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label htmlFor="country" className="block text-white mb-2">
+              <label htmlFor="country" className="block text-white mb-2 text-lg">
                 <span className="text-redcanary">*</span> Country:
               </label>
               <select
@@ -275,10 +271,9 @@ const RedCanaryForm: React.FC = () => {
                 <option value="India">India</option>
                 <option value="China">China</option>
                 <option value="Brazil">Brazil</option>
-                {/* More countries would be added here */}
               </select>
             </div>
-            <div className="text-xs text-gray-400 mb-6">
+            <div className="text-sm text-gray-400 mb-6">
               This site is protected by reCAPTCHA and the Google{" "}
               <a href="https://policies.google.com/privacy" target="_blank" className="text-redcanary hover:underline">
                 Privacy Policy
