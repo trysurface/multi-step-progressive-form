@@ -54,7 +54,7 @@ const Index = () => {
       
       <div className="absolute bottom-0 right-0 opacity-20 pointer-events-none">
         <img 
-          src="/lovable-uploads/5e57544d-3d19-4b45-b89a-1fd010cfeb34.png" 
+          src="https://redcanary.com/wp-content/uploads/2024/05/CanariesInFlight_RedCanary-demo2.png" 
           alt="Red Canary Birds" 
           className="w-64"
         />
