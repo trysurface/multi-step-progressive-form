@@ -56,7 +56,7 @@ const Index = () => {
         <img 
           src="https://redcanary.com/wp-content/uploads/2024/05/CanariesInFlight_RedCanary-demo2.png" 
           alt="Red Canary Birds" 
-          className="w-96"
+          className="w-[48rem]"
         />
       </div>
     </div>
