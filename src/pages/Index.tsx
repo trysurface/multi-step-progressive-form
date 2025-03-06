@@ -1,11 +1,63 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import RedCanaryForm from '@/components/RedCanaryForm';
+import RedCanaryLogo from '@/components/RedCanaryLogo';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col lg:flex-row bg-black text-white">
+      <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center">
+        <div className="mb-8">
+          <RedCanaryLogo />
+        </div>
+        
+        <div className="mb-12">
+          <h1 className="text-5xl font-bold mb-6">
+            See Red Canary in action
+          </h1>
+          <p className="text-lg mb-8">
+            In your 30-minute personal demo, find out how Red Canary:
+          </p>
+          
+          <ul className="space-y-4">
+            <li className="flex items-start">
+              <span className="text-redcanary mr-3">■</span>
+              <span>
+                Connects to your environment, with our security experts monitoring it 24×7
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-redcanary mr-3">■</span>
+              <span>
+                Provides actionable threat intelligence to help you prioritize resources
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-redcanary mr-3">■</span>
+              <span>
+                Delivers customer-validated 99% threat accuracy, saving you time wasted on false positives
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-redcanary mr-3">■</span>
+              <span>
+                Acts as an extension of your team, finding and stopping threats before they cause harm
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="w-full lg:w-1/2 p-8 lg:p-16 flex items-center">
+        <RedCanaryForm />
+      </div>
+      
+      <div className="absolute bottom-0 right-0 opacity-20 pointer-events-none">
+        <img 
+          src="/lovable-uploads/5e57544d-3d19-4b45-b89a-1fd010cfeb34.png" 
+          alt="Red Canary Birds" 
+          className="w-64"
+        />
       </div>
     </div>
   );
