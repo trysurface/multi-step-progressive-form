@@ -9,9 +9,12 @@ const RedCanaryLogo: React.FC<LogoProps> = ({ className = "h-12" }) => {
   return (
     <div className={className}>
       <img 
-        src="/lovable-uploads/6e65c754-d058-4978-90e9-a135d10df71a.png" 
+        src="https://redcanary.com/wp-content/uploads/2024/05/Red-Canary-Logo-2024-reverse.png" 
         alt="Red Canary" 
         className="h-full"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
       />
     </div>
   );
