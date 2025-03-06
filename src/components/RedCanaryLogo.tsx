@@ -13,7 +13,7 @@ const RedCanaryLogo: React.FC<LogoProps> = ({ className = "h-12" }) => {
         alt="Red Canary" 
         className="h-full"
         loading="eager"
-        fetchpriority="high"
+        fetchPriority="high"
         decoding="async"
       />
     </div>

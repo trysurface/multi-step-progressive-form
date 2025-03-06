@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import ProgressIndicator from './ProgressIndicator';
@@ -86,6 +85,11 @@ const RedCanaryForm: React.FC = () => {
       title: "Form submitted",
       description: "Thank you for your interest in Red Canary.",
     });
+    
+    // Redirect to the thank you page after a short delay
+    setTimeout(() => {
+      window.location.href = 'https://redcanary.com/thank-you-demo/';
+    }, 1000); // 1 second delay to allow the toast to be seen
   };
 
   return (
