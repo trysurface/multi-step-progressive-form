@@ -52,11 +52,11 @@ const Index = () => {
         <RedCanaryForm />
       </div>
       
-      <div className="absolute bottom-0 right-0 opacity-20 pointer-events-none">
+      <div className="absolute bottom-0 right-0 opacity-40 pointer-events-none">
         <img 
           src="https://redcanary.com/wp-content/uploads/2024/05/CanariesInFlight_RedCanary-demo2.png" 
           alt="Red Canary Birds" 
-          className="w-64"
+          className="w-96"
         />
       </div>
     </div>

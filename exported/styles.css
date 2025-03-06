@@ -290,12 +290,12 @@ label {
   position: absolute;
   bottom: 0;
   right: 0;
-  opacity: 0.2;
+  opacity: 0.4;
   pointer-events: none;
 }
 
 .background-image img {
-  width: 16rem;
+  width: 24rem;
 }
 
 /* Animations */
